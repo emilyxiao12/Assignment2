@@ -1,25 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <link rel="manifest" href="/magic.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <meta name="theme-color" content="white" />
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Magic 8 Ball">
-    <meta name="msapplication-TileImage" content="/img/ms144.png">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
+
+    <!-- JQuery / Materialize CSS + JavaScript imports -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap');
+
+        p {
+            font-family: Fredoka;
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: black;
+        }
+    </style>
+    <style>
+        textarea#subject{
+            color: black;
+        }
+        ul#slide-out.side-nav.fixed.show-on-large-only{
+            background-color: azure;
+        }
+        #container {
+            padding-left: 300px;
+        }
+
+        #content {
+            padding: 20px;
+        }
+        @media only screen and (max-width : 992px) {
+            #container {
+                padding-left: 0px;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
-    <form id="magic8ball">
-        <h1>Magic 8 ball</h1>
-        <h2>the 8 ball knows</h2>
-        <p>Ask me anything I will answer.</p>
-        <input id="question" placeholder="enter a question" />
-        <button type="submit">Ask</button>
-        <p id="answer">If you had asked The answer would be here</p>
-    </form>
-    <script src="js/main.js" type="module"></script>
+    <div id="container" style="background-color: rgb(222, 231, 235)">
+
+        <div id="menu" >
+
+            <ul id="slide-out" class="side-nav fixed show-on-large-only">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Experiences<i class="material-icons"arrow_drop_down></i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#opal">Opal</a></li>
+                                    <li><a href="#teacherAssistant">Teacher Assistant</a></li>
+                                    <li><a href="#ambassador">Ambassador</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="content" style="background-color: rgb(222, 231, 235)">
+            <a href="#" data-activates="slide-out" class="button-collapse hide-on-large-only"><i
+                    class="material-icons">menu</i></a>
+            <section id="home" style = "background-color:rgb(206, 211, 231)">
+                <h1  style ="background-color: cornflowerblue">Emily Xiao</h1>
+
+                <p>Welcome to my portfolio, here you will find some more information about my education, projects, and
+                    my background</p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </section>
+            <section id="about" style = "background-color:rgb(206, 211, 231)">
+                <h1  style ="background-color: cornflowerblue">About</h1>
+                <div>
+                    <img src="Profile.JPEG" alt="profile picture" width="400" height="500">
+                </div>
+                <div>
+                    <p> Hello! My name is Emily xiao! When I am not working on designs or school you can probably
+                        find me either drawing, listening to music, going for walks, or hanging out with friends.
+                    </p>
+                    <p>I’m currently a 3rd year university UX student at Laurier and worked as a Junior UX/UI Designer
+                        at Opal, LLC. An aspiring designer looking for a co-op position in spring 2022!</p>
+                </div>
+            </section>
+
+            <section id="education" style = "background-color:rgb(206, 211, 231)">
+                <h2  style ="background-color: cornflowerblue"> Education</h2>
+                <p>I currently am finishing up my third year in the User Experience Design program at Laurier Brantford!
+                    I am also one of the
+                    campus ambassadors in Laurier, which is basically chosen students that help with open houses, head
+                    start, and open house.</p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </section>
+
+            <section id="contact" style = "background-color:rgb(206, 211, 231)">
+                <h2 style ="background-color: cornflowerblue"> Contact </h2>
+                <div>
+                    <p>
+                        Here is my <a href="https://www.linkedin.com/in/emily-xiao-16b9291a0/">Linkedln </a> link if you
+                        would like to connect!
+                        Or even use the contact form and we can discuss more.
+                    </p>
+                    </p>
+                </div>
+                <div class="container" >
+                    <form action="mailto:snow3341@outlook.com" method="POST" enctype="multipart/form-data"
+                        name="ContactForm">
+
+                        <label for="fname" style = "color: black">First Name</label>
+                        <input type="text" id="fname" name="firstname" style = "color: black" placeholder="Write your first name">
+
+                        <label for="lname" style = "color: black">Last Name</label>
+                        <input type="text" id="lname" name="lastname" style = "color: black" placeholder="Write your last name..">
+
+                        <label for="message" style = "color: black">Message</label>
+                        <select id="message" name="message">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+
+                        <label for="subject" style = "color: black"></label>
+                        <textarea id="subject" name="subject" placeholder="Ask any questions or comments that you have"
+                            style="height:200px; color: black"></textarea>
+
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+                <div>
+                    <p>Or you can find me at <a action="mailto:snow3341@outlook.com" style = "color:brown">snow3341@outlook.com</a></p>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </section>
+
+            <section id="opal" style = "background-color: rgb(206, 211, 231)">
+                <h2 style ="background-color: cornflowerblue">Opal.llc</h2>
+                <p>Junior UX/UI Designer, May 2021- Oct 2021 </p>
+                <div>
+                    <p>This experience was working with a start up company. Some of my roles as a Junior designer was to work with the design Team
+                        to create a website for the company. I was in charge of creating many iterations the landing page, the market place, smaller elements such as some pop ups.</p>
+                    <p>The work environment was very welcoming, as most of us were students from Canada and the US. </p>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </section>
+        </div>
+
+            <section id ="teacherAssistant" style = "background-color: rgb(206, 211, 231)">
+                <h2 style ="background-color: cornflowerblue">Teacher Assistant</h2>
+                <p>UX 100 Teacher Assistant, Sept 2021 - Dec 2021</p>
+                <div>
+                    <p>As a teacher assistant, I helped support first year user experience design students by guiding them through their final projects, basic university life, 
+                        tips for a successful portfolio. I also communicated with the teacher on how well the students are taking in the course content. This includes checking in the prof every week, taking in suggestions from 
+                        first years.
+                    </p>
+                </div>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+               
+            </section>
+
+            <section id = "ambassador" style = "background-color: rgb(206, 211, 231)">
+                <h2 style ="background-color: cornflowerblue">Laurier Brantford Ambassador</h2>
+                <div>
+                    <p>In this role I help anything that has to do with the campus, and introducing the new students and incoming first years. 
+                        Ambassadors also support students with academics, how to get involved, and participate in the Ontario University Fair. Through this experience, I can apply the confidence that I have gained through working with
+                        my coordinators and fellow ambassadors. Being able to be confident, especially in ux, is essential because you have to do many design pitches in front of many different types of people.
+                    </p>
+                </div>
+            </section>
+    </div>
+    <script>
+        $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+        });
+
+
+    </script>
 </body>
+
+</html>
